@@ -25,7 +25,7 @@ SECRET_KEY = '510ms1)m%#6&_sct^e3s%uf-iy2nybl+%cf6mu6box^qgyou5j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '.zerochan.cn', '120.79.69.170']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '.zerochan.xin', 'http://120.79.69.170/']
 
 # Application definition
 
