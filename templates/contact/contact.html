@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block main %}
+    <h1 class="page-title">Contact</h1>
+    <article class="post">
+        <div class="entry-content clearfix">
+            <form action="#" method="post" class="contact-form">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <input type="text" name="name" placeholder="您的名字" required>
+                        <input type="email" name="email" placeholder="您的邮箱地址" required>
+                        <input type="text" name="subject" placeholder="主题" required>
+                        <textarea name="message" rows="7" placeholder="输入您想说的" required></textarea>
+                        <button class="btn-send btn-5 btn-5b ion-ios-paperplane"><span>发送</span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </article>
+{% endblock main %}

@@ -163,6 +163,14 @@ class CategoryView(IndexView):
     # return render(request, 'blog/index.html', context={'post_list': post_list})
 
 
+class ArchivesListView(IndexView):
+    template_name = 'blog/archives.html'
+    paginate_by = 0
+
+    def get_queryset(self):
+        return super(ArchivesListView, self).get_queryset().all()
+
+
 class ArchivesView(IndexView):
     def get_queryset(self):
         return super(ArchivesView, self).get_queryset().\
@@ -257,3 +265,8 @@ def search(request):
     post_list = Post.objects.filter(Q(title__icontains=q) | Q(body__icontains=q))
     return render(request, 'blog/index.html', {'error_msg': error_msg,
                                                'post_list': post_list})
+
+
+def contact(request):
+
+    return render(request, 'contact/contact.html')
