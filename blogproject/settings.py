@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '510ms1)m%#6&_sct^e3s%uf-iy2nybl+%cf6mu6box^qgyou5j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '.zerochan.xin', 'http://120.79.69.170/']
 
@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'blog_db',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': '123456',
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -114,6 +114,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # TIME_ZONE = 'UTC'
 LANGUAGE_CODE = 'zh-hans'
 TIME_ZONE = 'Asia/Shanghai'
+
+FILE_CHARSET = 'utf-8'
+
+DEFAULT_CHARSET = 'utf-8'
 
 
 USE_I18N = True
