@@ -10,7 +10,11 @@ class Comment(models.Model):
     text = models.TextField()
     created_time = models.DateTimeField(auto_now_add=True)  # 时间自动生成
 
-    post = models.ForeignKey('blog.Post')
+    post = models.ForeignKey('blog.Post', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.text[:20]
+
+    class Meta:
+        verbose_name = '评论'
+        verbose_name_plural = verbose_name
